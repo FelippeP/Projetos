@@ -1,0 +1,101 @@
+#area
+{
+  position:relative;
+  left:40%;
+  top:6em;
+  width:320px;
+  height:300px;
+}
+ 
+ h1{
+    color:     #00008B;
+    text-align: center;
+    position:relative;
+    top:4em;
+    left:25px;
+}
+ 
+ h2{
+    text-align: center;
+    position:relative;
+    top:4.6em;
+    left:30px;
+    color:     #6495ED;
+}
+
+fieldset
+{
+  background-color:        #F8F8FF;
+  width:370px;
+  height:250px;
+}
+
+#formulario label
+{
+  position:absolute;
+  left:10px;
+  margin-right:10px;
+}
+#formulario input.nome
+{
+  background-color:#FFF8DC;
+  position:absolute;
+  left:100px;
+  top:22px;
+  width:280px;
+}
+#formulario input.email
+{ 
+  background-color:#FFF8DC;
+  position:absolute;
+  left:100px;
+  margin-top:-3px;
+  width:280px;
+}
+ 
+ #formulario input.telefone
+{ 
+  background-color:#FFF8DC;
+  position:absolute;
+  left:100px;
+  margin-top:-2px;
+  width:280px;
+}
+ 
+ #formulario input.cnpj
+{ 
+  background-color:#FFF8DC;
+  position:absolute;
+  left:100px;
+  margin-top:-2px;
+  width:280px;
+}
+
+#formulario input.rg
+{ 
+  background-color:#FFF8DC;
+  position:absolute;
+  left:100px;
+  margin-top:-22px;
+  width:280px;
+}
+ 
+ #formulario input.rs
+{ 
+  background-color:#FFF8DC;
+  position:absolute;
+  left:100px;
+  margin-top:-20px;
+  width:280px;
+}
+ 
+ 
+ 
+#formulario input.btn_submit
+{
+  border-style:dashed;
+  position:absolute;
+  bottom: 3em;
+  right:70px;
+  background-color:#FFF8DC;
+}
