@@ -106,7 +106,8 @@ public final class lista_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        <h3>Clientes</h3>\n");
       out.write("        \n");
-      out.write("        <table border=\"1\">\n");
+      out.write("        <table class=\"blueTable\">\n");
+      out.write("        <thead>\n");
       out.write("            <tr>\n");
       out.write("                <th>ID</th>\n");
       out.write("                <th>Nome</th>\n");
@@ -117,6 +118,13 @@ public final class lista_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <th>Endereço</th>\n");
       out.write("                <th>Comandos</th>\n");
       out.write("            </tr>\n");
+      out.write("            </thead>\n");
+      out.write("            <tfoot>\n");
+      out.write("            <td colspan=\"4\">\n");
+      out.write("            <div class=\"links\"><a href=\"#\">&laquo;</a> <a class=\"active\" href=\"#\">1</a> <a href=\"#\">2</a> <a href=\"#\">3</a> <a href=\"#\">4</a> <a href=\"#\">&raquo;</a></div>\n");
+      out.write("            </td>\n");
+      out.write("            </tfoot>\n");
+      out.write("            <tbody>\n");
       out.write("            ");
 for (Cliente c : BD.getClienteList()) {
       out.write("\n");
@@ -160,10 +168,10 @@ int id = BD.getClienteList().indexOf(c);
       out.write("                    </a>\n");
       out.write("                </td>\n");
       out.write("            </tr>\n");
-      out.write("\n");
       out.write("            ");
 }
       out.write("\n");
+      out.write("            </tbody>\n");
       out.write("        </table>\n");
       out.write("    </body>\n");
       out.write("</html>\n");

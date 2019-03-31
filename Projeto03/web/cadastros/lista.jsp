@@ -51,20 +51,28 @@
 %>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/lista.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Controle de cadastros</title>
+        <title>Clientes</title>
     </head>
     <body>
-        <h1>Controle de cadastros</h1>
-        <h2>Cadastros</h2>
-
+    <div class="menu">
+    <a href = "home.jsp">Pagina Inicial</a>
+    <a href = "lista.jsp">Tabela de Clientes</a>
+    <a href = "lista2.jsp">Tabela de Fornecedores</a>
+    <font face="Verdana">
+    </div>
+        <h1><center>Controle de cadastros:</center></h1>
         <form action="adicionar.jsp">
-            <input type="submit" value="Adicionar">
+            <center><input class="bt" type="submit" value="Adicionar"></center>
         </form>
 
-        <h3>Clientes</h3>
+        <h3>Lista de clientes:</h3>
         
-        <table border="1">
+        <table class="blueTable">
+        <thead>
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
@@ -75,8 +83,12 @@
                 <th>Endereço</th>
                 <th>Comandos</th>
             </tr>
+            </thead>
+            <tbody>
             <%for (Cliente c : BD.getClienteList()) {%>
+            
             <tr>
+            
                 <%int id = BD.getClienteList().indexOf(c);%>
 
                 <td><%= id%></td>
@@ -88,16 +100,25 @@
                 <td><%= c.getEnd()%></td>
                 <td>
                     <a href="alterar.jsp?id=<%=id%>">
-                        <button>Alterar</button>
+                        <button class="bt">Alterar</button>
 
                     </a>
                     <a href="excluir.jsp?id=<%=id%>">
-                        <button>Excluir</button>
+                        <button class="bt">Excluir</button>
                     </a>
                 </td>
             </tr>
-
             <%}%>
+            
+            </tbody>
         </table>
+        </font>
+            <!-- Footer -->
+  <footer>
+    <div>
+        <p class="escrita">Desenvolvedores: <a href="https://github.com/FelippeP"> Felippe Papai</a> / <a href="https://github.com/Felipefogo"> Felipe Venâncio </a> </p>
+    </div>
+    <!-- /.container -->
+  </footer>
     </body>
 </html>
