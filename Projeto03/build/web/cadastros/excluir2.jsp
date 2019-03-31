@@ -10,6 +10,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/exc_for.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Excluir Contatos</title>
     </head>
@@ -19,17 +20,21 @@
         <h1>Controle de cadastros</h1>
         <h2>Excluir Fornecedor</h2>
         <h3>ID: <b><%=id%></b></h3>
-        <h3>Nome: <b><%=c.getNome()%></b></h3>
-        <h3>telefone: <b><%=c.getTelefone()%></b></h3>
-        <h3>E-mail: <b><%=c.getEmail()%></b></h3>
-        <h3>Razão social: <b><%=c.getRs()%></b></h3>
-        <h3>CNPJ: <b><%=c.getCnpj()%></b></h3>
-        <h3>Endereço: <b><%=c.getEnd()%></b></h3>
-        <form action="lista2.jsp">
-            <h4>Tem certeza que deseja excluir esse registro?</h4>
-            <input type="submit" name="excluir2" value="Sim">
-            <input type="submit" name="excluir2" value="Não">
-            <input type="hidden" name="id" value="<%= id %>">
+        <div id="area">
+            <fieldset>
+        <form id=formulario autocomplete="off" action="lista2.jsp">
+            <br>Nome: <br/><input class="nome" type="text" value="<%=c.getNome()%>" readonly="readonly">
+            <br/>Telefone:<br/><input class="telefone" type="text" value="<%=c.getTelefone()%>" readonly="readonly">
+        <br/>E-mail:<br/><input class="email" type="text" value="<%=c.getEmail()%>" readonly="readonly">
+        <br/>Razão social:<br/><input class="rs" type="text" value="<%=c.getRs()%>" readonly="readonly">
+        <br/>CNPJ:<br/><input class="cnpj" type="text" value="<%=c.getCnpj()%>" readonly="readonly">
+        <br/>Endereço:<br/><input class="adress" type="text" value="<%=c.getEnd()%>" readonly="readonly">
+        <h4>Tem certeza que deseja excluir esse registro?</h4>
+        <input class="sim" type="submit" name="excluir2" value="Sim">
+        <input class="nao" type="submit" name="excluir2" value="Não">
+        <input type="hidden" name="id" value="<%= id %>">
+        </fieldset>
         </form>
+        </div>
     </body>
 </html>

@@ -3,7 +3,6 @@ package org.apache.jsp.cadastros;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
-import br.com.fatecpg.oo.Fornecedor;
 import br.com.fatecpg.oo.BD;
 import br.com.fatecpg.oo.Cliente;
 
@@ -44,7 +43,6 @@ public final class lista_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
       out.write("\n");
       out.write("\n");
       out.write("\n");
