@@ -114,7 +114,7 @@
         <!-- Footer -->
   <footer>
     <div>
-        <p class="escrita">Desenvolvedores: <a href="https://github.com/FelippeP"> Felippe Papai</a> / <a href="https://github.com/Felipefogo"> Felipe Venâncio </a> </p>
+        <p class="escrita">Desenvolvedores: <a href="https://github.com/FelippeP" style="text-decoration: none"> Felippe Papai</a> / <a href="https://github.com/Felipefogo" style="text-decoration: none"> Felipe Venâncio </a> </p>
     </div>
     <!-- /.container -->
   </footer>
